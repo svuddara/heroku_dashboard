@@ -6,7 +6,7 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 
 
-app.set('port', (process.env.PORT || 6000));
+app.set('port', (process.env.PORT || 5000));
 // Create application/x-www-form-urlencoded parser
 //Note that in version 4 of express, express.bodyParser() was
 //deprecated in favor of a separate 'body-parser' module.
