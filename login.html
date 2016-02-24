@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-style: italic;
+                width: 50%;
+                margin: 0px auto;
+            }
+            #login_form {
+
+            }
+
+            #f1 {
+                background-color: #FFF;
+                border-style: solid;
+                border-width: 1px;
+                padding: 23px 1px 20px 114px;
+            }
+            .f1_label {
+                white-space: nowrap;
+                padding: 3px 30px 20px 1px;
+            }
+            span {color: white;}
+
+            .new {
+                background: black;
+                text-align: center;
+            }
+
+            .tabledesign{
+                position: absolute;
+                bottom: 50%;
+                right: 30%;
+                left: 30%;
+            }
+        </style>
+ 
+    </head>
+
+    <body>
+        <center>
+        <div id="login_form" class="tabledesign">
+            <div class="new"><span>Enter login details</span></div>  <!-- This is your header text-->
+            <form name="f1" id="f1" action="/myaction" method="post">
+                <table>
+                    <tr>
+                        <td class="f1_label">User Name :</td> <!-- This is your first Input Box Label-->
+                        <td class="f1_label"><input id="user" type="text" name="username" value="" /><!-- This is your first Input Box-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="f1_label">Password  :</td><!-- This is your Second Input Box Label-->
+                        <td class="f1_label"><input id="pwd" type="password" name="password" value=""  /><!-- This is your Second Input Box -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <input type="submit" name="login" value="Log In" style="font-size:18px; " /><!-- This is your submit button -->
+                        </td>
+                    </tr>
+                </table>
+            </form> 
+        </div>
+        </center>
+    </body>
+</html>

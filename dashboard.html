@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+
+         <script>
+
+             function readTextFile(file)
+               {
+                  var rawFile = new XMLHttpRequest();
+                  rawFile.open("GET", file, false);
+                  rawFile.onreadystatechange = function ()
+                  {
+                     if(rawFile.readyState === 4)
+                     {
+                        if(rawFile.status === 200 || rawFile.status == 0)
+                        {
+                           allText = rawFile.responseText;
+                        }
+                     }
+                  }
+                  rawFile.send(null);
+               }
+
+               function createDynamicURL(val)
+               {
+                  var path = val + "/Link/link.txt";
+                  readTextFile(path);
+                  if(allText == ""){
+                     allText = path + "/apk/app-debug.apk";
+                     }
+                   return allText;
+               }
+
+               function RedirectURL(projs)
+               {
+                  window.location= createDynamicURL(projs);
+               }
+
+         </script>
+
+
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>Layout</title>
+      <style type="text/css">body {font-family: "Times New Roman", Times, serif;font-size:16px;}th, td {padding:2px 8px;}</style>
+   </head>
+   <body>
+      <h3 align="center">Innovation Dashboard</h3>
+      <table border="1" cellspacing="0" cellpadding="0" style="margin:0px auto; width:1000px">
+         <tr>
+            <th scope="col" align="center">Product</th>
+            <th scope="col">Platform</th>
+            <th colspan="5" width="500">Description</th>
+            <th scope="col">Availability in TestFairy/TestFlight</th>
+            <th scope="col">Screenshots</th>
+            <th scope="col">Video</th>
+         </tr>
+         <tr>
+            <td align="center">Fidelity</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+            <td><a href ="#" onclick="RedirectURL('Android_Fidelity');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/svuddara/website-template/tree/gh-pages/Fidelity/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_Fidelity/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+         <tr>
+            <td align="center">Everywhere shop</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+             <td><a href ="#" onclick="RedirectURL('Android_Everywhere_shop');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/Android_Everywhere_shop/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_Everywhere_shop/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+         <tr>
+            <td align="center">Marqueta</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+             <td><a href ="#" onclick="RedirectURL('Android_Marqueta');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/Android_Marqueta/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_Marqueta/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+
+         <tr>
+            <td align="center">Money 20 20</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+             <td><a href ="#" onclick="RedirectURL('Android_Money_20:20');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/Android_Money_20:20/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_Money_20:20/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+         <tr>
+            <td align="center">IoT</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+            <td><a href ="#" onclick="RedirectURL('Android_IoT');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/Android_IoT/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_IoT/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+         <tr>
+            <td align="center">P2P</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+            <td><a href ="#" onclick="RedirectURL('Android_P2P');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/Android_P2P/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_P2P/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+         <tr>
+            <td align="center">Rewards</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+
+           <td><a href ="#" onclick="RedirectURL('Android_Rewards');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/Android_Rewards/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_Rewards/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+
+         <tr>
+            <td align="center">Token Controls</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+           <td><a href ="#" onclick="RedirectURL('Android_Token_controls');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/Android_Token_controls/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_Token_controls/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+         <tr>
+            <td align="center">Visa Now</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Experience Visa executive programs and events like never before with Visa Now for your Android phone. With new immersive and fully interactive features, this event companion will guide you through innovative exhibits experiences and help bring to life new technologies.</td>
+           <td><a href ="#" onclick="RedirectURL('Android_Visa_Now');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/Android_Visa_Now/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_Visa_Now/Video/android-visa-now-recording_compressed.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+           <tr>
+            <td align="center">Welcome App</td>
+            <td>Android</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+            <td><a href ="#" onclick="RedirectURL('Android_Welcome_app');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/Android_Welcome_app/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="Android_Welcome_app/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+            <tr>
+            <td align="center">Smart Contracts</td>
+            <td>iOS</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+           <td><a href ="#" onclick="RedirectURL('iOS_Smart_Contracts');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/iOS_Smart_Contracts/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="iOS_Smart_Contracts/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+
+
+           <tr>
+            <td align="center">Everywhere shop</td>
+            <td>iOS</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+           <td><a href ="#" onclick="RedirectURL('iOS_Everywhere_shop');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/iOS_Everywhere_shop/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="iOS_Everywhere_shop/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+           <tr>
+            <td align="center">Visa Now</td>
+            <td>iOS</td>
+            <td colspan="5" width="500">Experience Visa executive programs and events like never before with Visa Now for your iphone. With new immersive and fully interactive features, this event companion will guide you through innovative exhibits experiences and help bring to life new technologies.</td>
+            <td><a href ="#" onclick="RedirectURL('iOS_Visa_Now');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/iOS_Visa_Now/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="iOS_Visa_Now/Video/final.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+
+           <tr>
+            <td align="center">Lou Lemonade</td>
+            <td>iOS</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+            <td><a href ="#" onclick="RedirectURL('iOS_Lou_lemonade');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/iOS_Lou_lemonade/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="iOS_Lou_lemonade/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+
+           <tr>
+            <td align="center">NextGen</td>
+            <td>iOS</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+            <td><a href ="#" onclick="RedirectURL('iOS_NextGen');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/iOS_NextGen/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="iOS_NextGen/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+
+           <tr>
+            <td align="center">P2P</td>
+            <td>iOS</td>
+            <td colspan="5" width="500">Prototype which will not make any API calls but will give an interactive user experience whereby a consumer can enter/review and update data and push button to move forward.Once the application is approved, user can add digital card to the wallet and try out payWave feature.</td>
+            <td><a href ="#" onclick="RedirectURL('iOS_P2P');return false;">Redirects to TestFairy/TestFlight if app is available.Otherwise downloads existing build.</a></td>
+            <td><a href="https://github.com/visa-innovation-sf/Innovation-Dashboard/tree/gh-pages/iOS_P2P/Images">Images Link</td>
+            <td><video controls="controls" width="200" height="220" >
+                  <source src="iOS_P2P/Video/demo.mp4" type="video/mp4" />
+               </video>
+            </td>
+         </tr>
+
+      </table>
+   </body>
+</html>
